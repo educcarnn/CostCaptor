@@ -1,0 +1,13 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  
+}
+  .Container{
+    width: 100%;
+    max-width: 86rem;
+    padding: .8rem;
+    margin: 0 auto;
+  }  
+

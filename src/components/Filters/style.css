@@ -1,0 +1,21 @@
+.Img-Header{
+    position: absolute;
+    width: 23.375rem;
+    height: 6.25rem;
+    margin-top: 3rem;
+    margin-left: 40.563rem;
+}
+.Border-Style{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.Ul-Father-Button {
+    display: flex;
+    margin-top: -2.188rem;
+    margin-left: 12.5rem;
+}
+.Li-Style-Button {
+    list-style: none;
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,19 @@
+.background {
+    background-color:#212529;
+    height: 41rem;
+}
+.Menu-Home{
+    margin-left: 10rem;
+}
+.Button-Page{
+    position: fixed;
+    margin-left: -62rem;
+    margin-top: 24rem;
+    width: 15.5rem;
+    height: 4.6rem;
+    border-radius: 22px;
+    color: white;
+    background: #FD377E;
+    border: none;
+    cursor: pointer;
+}

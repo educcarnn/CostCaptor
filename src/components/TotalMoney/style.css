@@ -1,0 +1,32 @@
+.Reduce{
+    width: 21.875rem;
+    height: 6.25rem;
+    background-color: white;
+    position: absolute;
+    margin-top: 1.625rem;
+    margin-left: 14.75rem;
+    color: black;
+    border: 1px solid #E9ECEF;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Names Reduce*/
+.First-Span{ 
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.Second-Span{
+    color: #FD377E;
+    margin-left: 11rem;
+    font-weight: 700;
+}
+
+.Msg-Text{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    color: #5B6166;
+    font-size: 0.75rem;
+}

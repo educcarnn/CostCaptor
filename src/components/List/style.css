@@ -1,0 +1,54 @@
+li{
+    list-style: none;
+}
+
+.List-Border-Green{
+    width: 33.7rem;
+    height: 4rem;
+    background-color: #F8F9FA;
+    border-left: 0.25rem solid rgb(72, 190, 111);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.List-Border-Gray {
+    width: 33.7rem;
+    height: 4rem;
+    background-color: #F8F9FA;
+    border-left: 0.25rem solid rgb(187, 180, 187);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+/* margin-top: -7.875rem;
+    width: 26.5rem;
+    height: 16.25rem;
+    position: relative;
+    margin-left: 43.25rem;
+    margin-bottom: -0.938rem */
+
+.List {
+    width: 31.25rem;
+    height: 6.25rem;
+    margin-left: -3rem;
+    margin-top: 1.688rem;
+    border-radius: 0.5rem;
+    background-color: gray;
+}
+
+.Ul-Father {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-left: 41.25rem;
+    margin-top: -20.625rem;
+}
+
+/*No items*/
