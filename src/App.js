@@ -21,17 +21,19 @@ function App() {
   }
 
   function removeFilter(value) {
-    const newItemsFilter = filterTransactions.filter((item, index) => index !== value);
+    const newItemsFilter = filterTransactions.filter(
+      (item, index) => index !== value
+    );
 
     setfilterTransactions(newItemsFilter);
   }
 
   return (
-    <div className="App">
-        {home ? (
-          <PageFirst setHome={setHome} home={home}></PageFirst>
-        ) : (
-          <div className="Container">
+    <div className="Container">
+      {home ? (
+        <PageFirst setHome={setHome} home={home}></PageFirst>
+      ) : (
+        <div className="Container">
           <div>
             <HeaderCard setHome={setHome}></HeaderCard>
             <Filters
@@ -54,18 +56,23 @@ function App() {
             )}
             <>
               {filterTransactions.length > 0 ? (
-                <ShowFilters filterTransactions={filterTransactions} removeFilter={removeFilter} />
+                <ShowFilters
+                  filterTransactions={filterTransactions}
+                  removeFilter={removeFilter}
+                />
               ) : (
                 <>
-                  <List listTransactions={listTransactions} remove={remove}></List>
+                  <List
+                    listTransactions={listTransactions}
+                    remove={remove}
+                  ></List>
                 </>
               )}
             </>
           </div>
-          </div>
-        )}
-      </div>
-   
+        </div>
+      )}
+    </div>
   );
 }
 
