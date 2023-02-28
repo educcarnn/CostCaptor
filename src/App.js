@@ -29,11 +29,11 @@ function App() {
   }
 
   return (
-    <div className="Container">
+    <div>
       {home ? (
         <PageFirst setHome={setHome} home={home}></PageFirst>
       ) : (
-        <div className="Container">
+        <div>
           <div>
             <HeaderCard setHome={setHome}></HeaderCard>
             <Filters
