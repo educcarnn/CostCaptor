@@ -10,6 +10,7 @@ import ShowFilters from "./components/ShowFilters";
 import PageFirst from "./pages/home";
 
 function App() {
+  
   const [listTransactions, setListTransactions] = useState([]);
   const [filterTransactions, setfilterTransactions] = useState([]);
   const [home, setHome] = useState(true);
@@ -28,6 +29,16 @@ function App() {
     setfilterTransactions(newItemsFilter);
   }
 
+  const SumTotal = listTransactions
+    .filter(({ type }) => type === "Entrada" || type === "Saída")
+    .reduce((acumulador, item) => {
+        if (item.type === "Entrada") {
+            return acumulador + Number(item.value);
+        } else {
+            return acumulador - Number(item.value);
+        }
+    }, 0);
+
   return (
     <div>
       {home ? (
@@ -38,6 +49,7 @@ function App() {
             <HeaderCard setHome={setHome}></HeaderCard>
             <Filters
               listTransactions={listTransactions}
+              SumTotal={SumTotal}
               setListTransactions={setListTransactions}
               filterTransactions={filterTransactions}
               setfilterTransactions={setfilterTransactions}
@@ -48,7 +60,7 @@ function App() {
             ></Form>
             <></>
             {listTransactions.length > 0 ? (
-              <TotalMoney listTransactions={listTransactions}></TotalMoney>
+              <TotalMoney listTransactions={listTransactions} SumTotal={SumTotal}></TotalMoney>
             ) : (
               <>
                 <NoItems></NoItems>

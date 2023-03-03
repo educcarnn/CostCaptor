@@ -6,36 +6,28 @@ import ButtonDisable2 from "../../imgs/Filters/ButtonDisable2.svg";
 import { useState } from "react";
 
 function Filters({ listTransactions, setfilterTransactions }) {
-  const [total, setTotal] = useState(0)
+  const [totalEntrada, setTotalEntrada] = useState(0);
+  const [totalSaida, setTotalSaida] = useState(0);
 
   function Todos() {
     setfilterTransactions(listTransactions);
   }
 
   function Entrada() {
-    const listTransactionsEntrada = listTransactions.filter((fruits) => {
-      return fruits.type === 'Entrada'
-    });
+    const listTransactionsEntrada = listTransactions.filter(({ type }) => type === 'Entrada');
+    const sumTotalEntrada = listTransactionsEntrada.reduce((total, transaction) => total + Number(transaction.value), 0);
+    setTotalEntrada(sumTotalEntrada);
     setfilterTransactions(listTransactionsEntrada);
   }
 
   function Saida() {
-    const listTransactionsSaida = listTransactions.filter((fruits) => {
-      if (fruits.type === "Saída") {
-        return true;
-      }
-      return false;
-    });
-  
-    const totalSaida = listTransactionsSaida.reduce(
-      (total, { value }) => total + Number(value),
-      0
-    );
-    
-    setTotal(total - totalSaida);
-  
+    const listTransactionsSaida = listTransactions.filter(({ type }) => type === 'Saída');
+    const sumTotalSaida = listTransactionsSaida.reduce((total, transaction) => total + Number(transaction.value), 0);
+    setTotalSaida(sumTotalSaida);
     setfilterTransactions(listTransactionsSaida);
   }
+
+
 
   return (
     <>
