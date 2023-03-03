@@ -9,18 +9,18 @@ function Filters({ listTransactions, setfilterTransactions }) {
   const [totalEntrada, setTotalEntrada] = useState(0);
   const [totalSaida, setTotalSaida] = useState(0);
 
-  function Todos() {
+  const Todos = () => {
     setfilterTransactions(listTransactions);
   }
 
-  function Entrada() {
+  const Entrada = () => {
     const listTransactionsEntrada = listTransactions.filter(({ type }) => type === 'Entrada');
     const sumTotalEntrada = listTransactionsEntrada.reduce((total, transaction) => total + Number(transaction.value), 0);
     setTotalEntrada(sumTotalEntrada);
     setfilterTransactions(listTransactionsEntrada);
   }
 
-  function Saida() {
+  const Saida = () => {
     const listTransactionsSaida = listTransactions.filter(({ type }) => type === 'Saída');
     const sumTotalSaida = listTransactionsSaida.reduce((total, transaction) => total + Number(transaction.value), 0);
     setTotalSaida(sumTotalSaida);

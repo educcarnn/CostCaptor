@@ -20,20 +20,16 @@ function App() {
     const newList = listTransactions.filter((item, i) => i !== index);
     setListTransactions(newList);
   
-    if (newList.length > 0) {
-      const newSumTotal = newList
-        .filter(({ type }) => type === "Entrada" || type === "Saída")
-        .reduce((acumulador, item) => {
-          if (item.type === "Entrada") {
-            return acumulador + Number(item.value);
-          } else {
-            return acumulador - Number(item.value);
-          }
-        }, 0);
-      setSumTotal(newSumTotal);
-    } else {
-      setSumTotal(0);
-    }
+    const newSumTotal = newList
+      .filter(({ type }) => type === "Entrada" || type === "Saída")
+      .reduce((acumulador, item) => {
+        if (item.type === "Entrada") {
+          return acumulador + Number(item.value);
+        } else {
+          return acumulador - Number(item.value);
+        }
+      }, 0);
+    setSumTotal(newSumTotal || 0)
   }
 
   function removeFilter(value) {
