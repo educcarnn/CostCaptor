@@ -1,18 +1,7 @@
 import "./style.css";
 
-function TotalMoney({ listTransactions}) {
+function TotalMoney({SumTotal}) {
 
-  const SumTotal = listTransactions.length > 0
-    ? listTransactions
-        .filter(({ type }) => type === "Entrada" || type === "Saída")
-        .reduce((acumulador, item) => {
-            if (item.type === "Entrada") {
-                return acumulador + Number(item.value);
-            } else {
-                return acumulador - Number(item.value);
-            }
-        }, 0)
-    : 0;
 
   function Sum() {
     return (
