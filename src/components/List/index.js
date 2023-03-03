@@ -2,17 +2,11 @@ import "./style.css";
 import ButtonTrash from "../../imgs/ButtonTrash.svg";
 
 function List({ listTransactions, remove}) {
-  // function Remove(id) {
-  // const newList = listTransactions.filter((item) => item !== id);
-
-  //    setListTransactions(newList);
-  // }
   function Item() {
     return (
       <ul className="Ul-Father">
         {listTransactions.map((name, index) => (
           <li key={index} className="List">
-
             {
             name.type === "Entrada" ? (
               <div className="List-Border-Green">

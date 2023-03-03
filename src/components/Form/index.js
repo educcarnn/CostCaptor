@@ -6,9 +6,9 @@ function Form({ listTransactions, setListTransactions }) {
   const [type, setType] = useState("");
   const [value, setValue] = useState("");
 
-  function prevent(e) {
-    e.preventDefault();
-  }
+ const prevent = (e) => {
+    e.preventDefault()
+ }
 
   function Dates() {
     const items = {
