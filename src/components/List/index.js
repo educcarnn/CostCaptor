@@ -1,7 +1,10 @@
 import "./style.css";
 import ButtonTrash from "../../imgs/ButtonTrash.svg";
+import { useState } from "react";
 
 function List({ listTransactions, remove}) {
+  const [totalValue, setTotalValue] = useState(0);
+
   function Item() {
     return (
       <ul className="Ul-Father">
@@ -50,6 +53,7 @@ function List({ listTransactions, remove}) {
                       borderRadius: "6px",
                       cursor: "pointer",
                     }}
+                    alt={ButtonTrash}
                     onClick={() => remove(index)}
                 
                   >

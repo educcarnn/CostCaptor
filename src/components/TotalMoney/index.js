@@ -2,7 +2,6 @@ import "./style.css";
 
 function TotalMoney({ listTransactions, SumTotal}) {
 
-
   function Sum() {
     return (
       <div>
