@@ -1,19 +1,21 @@
-html,
+
 body {
-  height: 100%;
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 .background {
-  background-color: #212529;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: steelblue;
 }
 
-.Name{
-    color: white;
+.Name {
+  color: white;
 }
 .Menu-Home {
   width: 50%;

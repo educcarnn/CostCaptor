@@ -1,22 +1,8 @@
-.No-Items-Father{
+.No-Items-Father {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+}
 
-    margin-top: -17.875rem;
-    margin-left: -3rem;
-
-}
-.No-Items{
-    margin-top: -7.875rem;
-    width: 26.5rem;
-    height: 16.25rem;
-    position: relative;
-    margin-left: 43.25rem;
-    margin-bottom: -0.938rem;
-}
-.Mini-Bar{
-    margin-left: -33.5rem;
-    margin-bottom: 1.125rem;
-}
-.Long-Bar{
-    margin-bottom: 3rem;
-    margin-left: -4.875rem;
-}

@@ -1,23 +1,22 @@
-.HeaderCard{
-    width: 84.25rem;
-    margin-left: -12px;
-    height: 5.688rem;
-    margin-top: -2.313rem;
-    box-shadow:2.937rem -4.813rem 6.25rem black;
-    position: static;
-}
-.Img-Button {
-    cursor: pointer;
-}
-.Button-None{
-    background-color: transparent;
-    border: none;
-}
 
-.Img-NuKenzie {
-    margin-left: 14.75rem;
-    margin-bottom: -1.063rem;
+.HeaderCard{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-shadow: 2.937rem -4.813rem 6.25rem black;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    align-items: center;
+    justify-content: center;
 }
+/*
+@media(max-width: 800px) {
+   
+}
+*/
+
 .Img-Home{
     margin-left: 48rem;
     margin-bottom: -2rem;
