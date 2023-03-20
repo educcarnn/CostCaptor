@@ -5,7 +5,6 @@ function Form({ listTransactions, setListTransactions }) {
   const [description, setDescription] = useState("");
   const [type, setType] = useState("");
   const [value, setValue] = useState("");
-  
 
   const prevent = (e) => {
     e.preventDefault();
@@ -24,9 +23,9 @@ function Form({ listTransactions, setListTransactions }) {
   };
 
   return (
-    <div className="Form">
-      <form onSubmit={prevent} className="Form-Items">
-        <div className="Form-Descrition">
+    <>
+      <form onSubmit={prevent} className="formItems">
+        <div className="formDescrition">
           <span className="Form-Label">Descrição</span>
           <input
             type="text"
@@ -34,9 +33,7 @@ function Form({ listTransactions, setListTransactions }) {
             onChange={(event) => setDescription(event.target.value)}
             className="Input-Descrition"
           />
-          <span className="Form-HelpText">
-            Ex: Compra de roupas
-          </span>
+          <span className="Form-HelpText">Ex: Compra de roupas</span>
         </div>
         <div className="Form-Value">
           <span className="Form-Label">Valor</span>
@@ -60,13 +57,13 @@ function Form({ listTransactions, setListTransactions }) {
             <option value="Saída">Saída</option>
           </select>
         </div>
-        <div className="Div-Button">
+        <div className="divButton">
           <button type="submit" className="button" onClick={Dates}>
             Inserir valor
           </button>
         </div>
       </form>
-    </div>
+    </>
   );
 }
 
