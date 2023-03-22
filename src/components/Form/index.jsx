@@ -25,8 +25,8 @@ function Form({ listTransactions, setListTransactions }) {
   return (
     <>
       <form onSubmit={prevent} className="formItems">
-        <div className="formDescrition">
-          <span className="Form-Label">Descrição</span>
+        <div>
+          <span>Descrição</span>
           <input
             type="text"
             placeholder="Digite aqui sua descrição"
@@ -35,32 +35,34 @@ function Form({ listTransactions, setListTransactions }) {
           />
           <span className="Form-HelpText">Ex: Compra de roupas</span>
         </div>
-        <div className="Form-Value">
-          <span className="Form-Label">Valor</span>
-          <input
-            type="number"
-            placeholder="1              R$"
-            onChange={(event) => setValue(event.target.value)}
-            className="Input-Value"
-          />
-        </div>
-        <div className="Form-Select">
-          <span className="Form-Label">Tipo de valor</span>
-          <select
-            onChange={(event) => setType(event.target.value)}
-            className="Select-Type"
-          >
-            <option value="" selected disabled hidden>
-              Escolha o valor
-            </option>
-            <option value="Entrada">Entrada</option>
-            <option value="Saída">Saída</option>
-          </select>
-        </div>
-        <div className="divButton">
-          <button type="submit" className="button" onClick={Dates}>
-            Inserir valor
-          </button>
+        <div className="contentValues">
+          <div className="Form-Value">
+            <span className="Form-Label">Valor</span>
+            <input
+              type="number"
+              placeholder="1              R$"
+              onChange={(event) => setValue(event.target.value)}
+              className="Input-Value"
+            />
+          </div>
+          <div className="Form-Select">
+            <span className="Form-Label">Tipo de valor</span>
+            <select
+              onChange={(event) => setType(event.target.value)}
+              className="Select-Type"
+            >
+              <option value="" selected disabled hidden>
+                Escolha o valor
+              </option>
+              <option value="Entrada">Entrada</option>
+              <option value="Saída">Saída</option>
+            </select>
+          </div>
+          <div>
+              <button type="submit" className="button" onClick={Dates}>
+                Inserir valor
+              </button>
+            </div>
         </div>
       </form>
     </>

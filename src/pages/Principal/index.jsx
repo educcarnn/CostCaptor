@@ -47,14 +47,7 @@ export default function Principal({ setHome }) {
     setfilterTransactions(newFilterTransactions);
   }
 
-  function removeFilter(value) {
-    const newItemsFilter = filterTransactions.filter(
-      (item, index) => index !== value
-    );
-
-    setfilterTransactions(newItemsFilter);
-  }
-
+  
   const SumTotal = listTransactions
     .filter(({ type }) => type === "Entrada" || type === "Saída")
     .reduce((acumulador, item) => {
@@ -70,13 +63,13 @@ export default function Principal({ setHome }) {
       <div>
         <HeaderCard setHome={setHome}></HeaderCard>
       </div>
-      <div>
+      <div className="contentForm">
         <Form
           listTransactions={listTransactions}
           setListTransactions={setListTransactions}
         ></Form>
-        <></>
-        {listTransactions.length > 0 ? (
+      </div>
+      {listTransactions.length > 0 ? (
           <TotalMoney
             listTransactions={listTransactions}
             SumTotal={SumTotal}
@@ -86,7 +79,6 @@ export default function Principal({ setHome }) {
             <NoItems></NoItems>
           </>
         )}
-      </div>
       <>
         {filterTransactions.length > 0 ? (
           <null></null>

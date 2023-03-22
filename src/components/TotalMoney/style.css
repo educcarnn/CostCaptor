@@ -1,40 +1,37 @@
 .reduce {
-  width: 100%;
-  max-width: 21.875rem;
-  height: 6.25rem;
+  height: 20%;
+  margin-left: 5%;
+  max-width: 25%;
+  margin-top: 2%;
   background-color: white;
-  margin-top: 3.25vw;
-  margin-left: 9vw;
-  margin-right: 9vw;
   color: black;
-  border: 1px solid #e9ecef;
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   .reduce {
-    margin-top: 1.625rem;
-    margin-left: 14.75rem;
+    margin-top: 5%;
+    margin-left: 10%;
     margin-right: 0;
   }
 }
 
-/*Names Reduce*/
 .firstSpan {
-  margin-top: 2rem;
-  margin-left: 1rem;
+  margin-top: 2vw;
+  margin-left: 1vw;
 }
 
 .secondSpan {
   color: #fd377e;
-  margin-left: 11rem;
+  margin-left: 11vw;
   font-weight: 700;
 }
 
 .message {
-  margin-left: 1rem;
-  margin-top: 0.5rem;
+  margin-left: 1vw;
+  margin-bottom: 2vw;
+  margin-top: 1.5vw;
   color: #5b6166;
   font-size: 0.75rem;
 }

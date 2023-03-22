@@ -1,0 +1,9 @@
+.contentForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 30%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
