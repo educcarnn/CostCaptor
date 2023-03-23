@@ -7,3 +7,14 @@
     margin-top: 5%;
     margin-left: 5%;
 }
+
+.test {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 50%;
+    align-items: flex-start;
+
+}
+
+

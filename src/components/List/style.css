@@ -5,13 +5,13 @@ li {
   .List-Border-Green {
     width: 33.7rem;
     height: 4rem;
-    background-color: #f8f9fa;
-    border-left: 0.25rem solid rgb(72, 190, 111);
+    background-color: #00d443;
+    border-left: 0.25rem solid rgb(187, 180, 187);
     border-radius: 0.5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: stretch;
+    align-items: center;
   }
   
   .List-Border-Gray {
@@ -21,16 +21,19 @@ li {
     border-left: 0.25rem solid rgb(187, 180, 187);
     border-radius: 0.5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: stretch;
+    align-items: center;
   }
-  
+  .Description-Wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+  }
+
   .List {
-    width: 31.25rem;
-    height: 6.25rem;
-    margin-left: -3rem;
-    margin-top: 1.688rem;
+    width: 100%;
+    margin-bottom: 5%;
     border-radius: 0.5rem;
     background-color: gray;
   }
@@ -38,9 +41,10 @@ li {
   .Ul-Father {
     display: flex;
     flex-direction: column;
-    position: relative;
-    width: 6.25rem;
-    height: 6.25rem;
-    margin-left: 41.25rem;
-    margin-top: -20.625rem;
+    /* width: 20%; */
+    /* height: 100vh; */
+    /* margin-left: 41.25rem; */
+    /* margin-top: -20.625rem; */
+    align-items: center;
+    justify-content: center;
   }
