@@ -1,5 +1,4 @@
 import ButtonTrash from "../../imgs/ButtonTrash.svg";
-
 import "./style.css"
 
 function List({ listTransactions, remove }) {
@@ -10,7 +9,7 @@ function List({ listTransactions, remove }) {
         {listTransactions.map((name, index) => (
           <li key={index} className="List">
             {name.type === "Entrada" ? (
-              <div className="List-Border-Green">
+              <div className="listGreen">
                 <div className="Description-Wrapper">
                   <span className="Description">{name.description}</span>
                   <span className="Type">{name.type}</span>
@@ -32,12 +31,12 @@ function List({ listTransactions, remove }) {
                 </div>
               </div>
             ) : (
-              <div className="List-Border-Gray">
+              <div className="listGray">
                 <div className="Description-Wrapper">
                   <span className="Description">{name.description}</span>
                   <span className="Type">{name.type}</span>
                 </div>
-                <div className="Value-Wrapper">
+                <div>
                   <span className="Value">R$ -{name.value}</span>
                 </div>
                 <div className="Button-Wrapper">

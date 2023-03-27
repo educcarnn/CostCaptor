@@ -1,8 +1,7 @@
-
-.HeaderCard{
+.headerCard{
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 16px;
     height: 100%;
     box-shadow: 2.937rem -4.813rem 6.25rem black;
     display: flex;
@@ -11,15 +10,22 @@
     align-items: center;
     justify-content: center;
 }
-/*
-@media(max-width: 800px) {
-   
-}
-*/
 
-.Img-Home{
-    margin-left: 48rem;
-    margin-bottom: -2rem;
-    position: absolute;
-    cursor: pointer;
+
+@media (max-width: 800px) {
+  .headerCard {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5%;
+    box-shadow: 2.937rem -4.813rem 6.25rem black;
+    box-shadow: none;
+    height: auto;
+  }
+  
+  .Img-Home {
+    margin-left: 0;
+    margin-bottom: 0;
+    position: static;
+    align-self: flex-start;
+  }
 }

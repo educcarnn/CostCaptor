@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./style.css";
 
 function Form({ listTransactions, setListTransactions }) {
+
   const [description, setDescription] = useState("");
   const [type, setType] = useState("");
   const [value, setValue] = useState("");

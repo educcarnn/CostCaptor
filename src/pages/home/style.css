@@ -42,3 +42,16 @@
 .text{
   text-align: center;
 }
+
+@media (max-width: 800px) {
+
+  .Button-Page {
+    margin-left: -8rem;
+    margin-top: 5rem;
+  }
+  
+  .container {
+    height: auto;
+  }
+
+}
