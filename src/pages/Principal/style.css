@@ -26,6 +26,10 @@
         align-items: center;
         width: 100%;
     }
+    .contentForm{
+        display: flex;
+        flex-direction: column;
+    }
   
   }
 

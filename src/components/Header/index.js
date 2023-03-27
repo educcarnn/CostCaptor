@@ -5,7 +5,7 @@ export default function HeaderCard({ setHome }) {
     <div className="headerCard">
       <div>Cost Captor</div>
       <div>
-        <button onClick={() => setHome(true)} className="Button-None">
+        <button onClick={() => setHome(true)} className="buttonNone">
           Início
         </button>
       </div>

@@ -11,6 +11,12 @@
     justify-content: center;
 }
 
+.buttonNone{
+  border: none;
+  border-radius: 0.5rem;
+
+}
+
 
 @media (max-width: 800px) {
   .headerCard {
