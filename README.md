@@ -16,10 +16,14 @@ Inicie o servidor de desenvolvimento com yarn start.
 
 
 **Como usar**
+
+
 Para cadastrar uma nova transação, clique no botão "Inserir valor" e preencha o formulário com os dados necessários, filtrando entre lucros e saídas, possível de ver o cálculo total 
 
 
 **Contribuindo**
+
+
 Contribuições são sempre bem-vindas! Para contribuir com o CostCaptor, siga os passos abaixo:
 
 
@@ -32,4 +36,6 @@ Abra um pull request descrevendo as alterações feitas.
 
 
 **Licença**
+
+
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais informações.
