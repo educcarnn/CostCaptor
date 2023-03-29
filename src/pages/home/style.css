@@ -27,6 +27,11 @@
   border: none;
   cursor: pointer;
 }
+.name {
+  font-weight: 600;
+  font-size: x-large;
+}
+
 
 .container {
   display: flex;
@@ -41,6 +46,7 @@
 
 .text{
   text-align: center;
+  font-size: large;
 }
 
 @media (max-width: 800px) {

@@ -69,29 +69,26 @@ export default function Principal({ setHome }) {
             setListTransactions={setListTransactions}
           ></Form>
           {listTransactions.length > 0 ? (
-          <TotalMoney
-            listTransactions={listTransactions}
-            SumTotal={SumTotal}
-          ></TotalMoney>
-        ) : (
+            <TotalMoney
+              listTransactions={listTransactions}
+              SumTotal={SumTotal}
+            ></TotalMoney>
+          ) : (
+            <div>
+              <NoItems />
+            </div>
+          )}
+        </div>
+        {filterTransactions.length > 0 ? (
           <div>
             <NoItems />
           </div>
-        )}
-        </div>
-        {filterTransactions.length > 0 ? (
-           <div>
-           <NoItems />
-         </div>
         ) : (
           <>
             <List listTransactions={listTransactions} remove={remove}></List>
           </>
         )}
       </div>
-
-       
-   
     </>
   );
 }

@@ -17,13 +17,14 @@
   align-content: flex-end;
   justify-content: space-around;
   border: 1px solid gray;
-  padding: 5%;
+  padding: 3%;
 }
+
 
 .contentValues {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   align-content: flex-start;
   flex-wrap: wrap;
@@ -31,53 +32,42 @@
   margin-top: 3vh;
 }
 
-.Form-Value,
-.Form-Descrition,
-.Form-Select {
+.formValue{
   display: flex;
   flex-direction: column;
 }
 
-.Input-Descrition {
-  width: 25%;
-  height: 5%;
-  margin-top: 2%;
-  border: none;
-  background-color: #f8f9fa;;
-  border-radius: 0.5rem;
-  padding-left: 1rem;
-}
 
-.Input-Descrition {
+.inputDescrition {
   width: 100%;
   height: 3rem;
   padding: 1rem;
   border: none;
-  background-color: #f8f9fa;;
+  background-color: #eff1ff;
   border-radius: 0.5rem;
 }
 
-.Form-Value {
+.formValue {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
-.Form-Value span {
+.formValue span {
   margin-bottom: 0.2rem;
 }
 
-.Form-Value input {
-  width: 100%;
+.formValue input {
+  width: 70%;
   height: 3rem;
   padding: 1rem;
   border: none;
-  background-color: #f8f9fa;
+  background-color: #eff1ff;
   border-radius: 0.5rem;
 }
 
-.Form-Select {
+.formSelect {
   display: flex;
   flex-direction: column;
 }
@@ -95,8 +85,8 @@
 }
 
 .button {
-  width: 18.75rem;
-  height: 3.125rem;
+  width: 100%;
+  height: 50%;
   color: white;
   border: none;
   border-radius: 0.625rem;
@@ -119,7 +109,7 @@
     padding: 2%;
   }
   
-  .Form-Value,
+  .formValue,
   .Form-Descrition,
   .Form-Select {
     align-items: center;

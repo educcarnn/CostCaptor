@@ -4,7 +4,7 @@ import "./style.css";
 export default function NoItems() {
   return (
     <div className="noItems">
-      <img src={SemLancamento} alt="Texto sem Sem Lancamento"></img>
+      <span className="release">Você não tem lançamentos!</span>
     </div>
   );
 }

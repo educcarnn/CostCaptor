@@ -5,8 +5,7 @@ li {
 .listGreen {
   width: 80vh;
   height: 4rem;
-  background-color: #00d443;
-  border-left: 0.25rem solid rgb(187, 180, 187);
+  background-color: #27b57e;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: row;
@@ -36,6 +35,10 @@ li {
   width: 100%;
   margin-bottom: 5%;
   border-radius: 0.5rem;
+}
+
+.buttonTrash{
+  width: 16px;
 }
 
 .Ul-Father {

@@ -26,19 +26,18 @@ function Form({ listTransactions, setListTransactions }) {
   return (
     <>
       <form onSubmit={prevent} className="formItems">
-        <div>
+        <div className="descrition">
           <span>Descrição</span>
           <input
             type="text"
-            placeholder="Digite aqui sua descrição"
+            placeholder="Digite aqui sua descrição (Ex: Compra de roupas)"
             onChange={(event) => setDescription(event.target.value)}
-            className="Input-Descrition"
+            className="inputDescrition"
           />
-          <span className="Form-HelpText">Ex: Compra de roupas</span>
         </div>
         <div className="contentValues">
-          <div className="Form-Value">
-            <span className="Form-Label">Valor</span>
+          <div className="formValue">
+            <span>Valor</span>
             <input
               type="number"
               placeholder="1              R$"
@@ -46,8 +45,8 @@ function Form({ listTransactions, setListTransactions }) {
               className="Input-Value"
             />
           </div>
-          <div className="Form-Select">
-            <span className="Form-Label">Tipo de valor</span>
+          <div className="formSelect">
+            <span>Tipo de valor</span>
             <select
               onChange={(event) => setType(event.target.value)}
               className="Select-Type"

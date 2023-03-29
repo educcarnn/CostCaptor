@@ -1,22 +1,27 @@
-.headerCard{
-    width: 100%;
-    margin: 0;
-    padding: 16px;
-    height: 100%;
-    box-shadow: 2.937rem -4.813rem 6.25rem black;
-    display: flex;
-    flex-direction: row;
-    gap: 20%;
-    align-items: center;
-    justify-content: center;
+.headerCard {
+  width: 100%;
+  color: white;
+  margin: 0;
+  padding: 16px;
+  height: 100%;
+  box-shadow: 2.937rem -4.813rem 6.25rem black;
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  align-items: center;
+  background-color: darkblue;
+  justify-content: center;
 }
 
-.buttonNone{
+.name {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.buttonNone {
   border: none;
   border-radius: 0.5rem;
-
 }
-
 
 @media (max-width: 800px) {
   .headerCard {
@@ -27,7 +32,7 @@
     box-shadow: none;
     height: auto;
   }
-  
+
   .Img-Home {
     margin-left: 0;
     margin-bottom: 0;

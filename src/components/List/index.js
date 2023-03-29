@@ -1,4 +1,4 @@
-import ButtonTrash from "../../imgs/ButtonTrash.svg";
+import ButtonTrash from "../../imgs/trash.png";
 import "./style.css"
 
 function List({ listTransactions, remove }) {
@@ -25,7 +25,7 @@ function List({ listTransactions, remove }) {
                     <img
                       src={ButtonTrash}
                       alt="Botão de Remover Transação"
-                      className="Button-Image"
+                      className="buttonTrash"
                     />
                   </button>
                 </div>
@@ -47,7 +47,7 @@ function List({ listTransactions, remove }) {
                     <img
                       src={ButtonTrash}
                       alt="Botão de Remover Transação"
-                      className="Button-Image"
+                      className="buttonTrash"
                     />
                   </button>
                 </div>
