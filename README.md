@@ -5,6 +5,8 @@ CostCaptor é um aplicativo de controle financeiro que ajuda a gerenciar seus ga
 
 
 **Instalação**
+
+
 Para utilizar o CostCaptor, siga os passos abaixo:
 
 
