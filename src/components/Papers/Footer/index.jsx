@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin , FaGithub } from 'react-icons/fa';
 import "./style.css"
 
 export default function Footer() {
@@ -12,25 +12,19 @@ export default function Footer() {
           </p>
           <div className="social-icons">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.linkedin.com/in/eduardo-carneiiiro/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook />
+              <FaLinkedin size={24} color='#0A66C2'/>
             </a>
+        
             <a
-              href="https://www.twitter.com/"
+              href="https://github.com/educcarnn"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram />
+              <FaGithub size={24} color="#333" />
             </a>
           </div>
         </div>

@@ -6,10 +6,10 @@
   color: white;
   background: #2626af;
   height: 100vh;
-  gap: 15%;
+  gap: 8%;
 }
 
-.content-text{
+.content-text {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,10 +17,15 @@
   width: 75%;
 }
 
-@media(max-width: 800px){
- 
+.content-second {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  align-items: center;
+}
 
-  .content-text{
+@media (max-width: 800px) {
+  .content-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,9 +43,6 @@
     gap: 15%;
   }
 }
-
-
-
 
 .background {
   display: flex;
