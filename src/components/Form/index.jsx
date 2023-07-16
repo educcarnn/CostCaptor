@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./style.css";
 
-function Form({ listTransactions, setListTransactions }) {
+export default function FormValues({ listTransactions, setListTransactions }) {
 
   const [description, setDescription] = useState("");
   const [type, setType] = useState("");
@@ -69,4 +69,3 @@ function Form({ listTransactions, setListTransactions }) {
   );
 }
 
-export default Form;

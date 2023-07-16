@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  background: #2626af;
+  height: 100vh;
+  gap: 15%;
+}
+
+.content-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+  width: 75%;
+}
+
+@media(max-width: 800px){
+ 
+
+  .content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    width: 75%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    height: auto;
+    background: #2626af;
+    gap: 15%;
+  }
+}
+
+
+
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: steelblue;
+}
+
+.imagem-principal {
+  width: 200px;
+}
+
+.Name {
+  color: white;
+}
+.Menu-Home {
+  width: 50%;
+}
+
+.Button-Page {
+  position: fixed;
+  margin-left: -62rem;
+  margin-top: 24rem;
+  width: 15.5rem;
+  height: 4.6rem;
+  border-radius: 22px;
+  color: white;
+  background: #fd377e;
+  border: none;
+  cursor: pointer;
+}
+.name {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.text {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  font-size: 4vh;
+}
+
+.second-text {
+  font-size: 1.8vh;
+}
+
+@media (max-width: 800px) {
+  .Button-Page {
+    margin-left: -8rem;
+    margin-top: 5rem;
+  }
+}

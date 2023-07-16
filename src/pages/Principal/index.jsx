@@ -2,9 +2,10 @@ import List from "../../components/List";
 import TotalMoney from "../../components/TotalMoney";
 import NoItems from "../../components/NoItems";
 import HeaderCard from "../../components/Header";
-import Form from "../../components/Form";
+import FormValues from "../../components/Form";
 import "./style.css";
 import { useEffect, useState } from "react";
+
 
 export default function Principal({ setHome }) {
   const [listTransactions, setListTransactions] = useState([]);
@@ -62,12 +63,12 @@ export default function Principal({ setHome }) {
       <div>
         <HeaderCard setHome={setHome}></HeaderCard>
       </div>
-      <div className="test">
+      <div className="containerElement">
         <div className="contentForm">
-          <Form
+          <FormValues
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
-          ></Form>
+          ></FormValues>
           {listTransactions.length > 0 ? (
             <TotalMoney
               listTransactions={listTransactions}

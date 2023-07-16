@@ -1,11 +1,20 @@
 import "./style.css";
-export default function PageFirst({ setHome }) {
+import { useHistory } from "react-router-dom";
+
+import Introduction from "../../components/Papers/Introduction";
+import Footer from "../../components/Papers/Footer";
+
+export default function Home({ setHome }) {
+  let history = useHistory();
+  const handleContents = () => {
+    history.push("/costcaptor");
+  };
+
   return (
     <div>
-      <div className="container">
-        <div className="name">Cost Captor</div>
-        <div className="text">Financie seus lucros e saídas, através dessa aplicação de forma simples e intuitiva</div>
-        <button onClick={() => setHome(false)}>Iniciar</button>
+      <div >
+        <Introduction/>
+        <Footer/>
       </div>
     </div>
   );
