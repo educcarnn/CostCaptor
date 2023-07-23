@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    max-width: 50%;
+    max-width: 100%;
     margin-top: 1%;
     margin-left: 5%;
 }
@@ -33,3 +33,144 @@
   
   }
 
+  .pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; 
+    margin-bottom: 2rem;
+  }
+  
+
+.formItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 2rem auto; 
+    padding: 1.5rem;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+  }
+  
+  .descrition {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .inputDescrition {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contentValues {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .formValue,
+  .formSelect {
+    width: 45%;
+  }
+  
+  .Input-Value,
+  .Select-Type {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  .reduce {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem; 
+  }
+  
+  .firstSpan {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .secondSpan {
+    color: #007bff; 
+  }
+  
+  .message {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+
+  .pie-chart-container {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem; 
+  }
+  
+  
+  .Ul-Father {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .List {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem; 
+  }
+  
+  .listGreen {
+    background-color: #e6f5ea; 
+    color: #008000; 
+  }
+  
+  .listGray {
+    background-color: #f2f2f2; 
+    color: #444; 
+  }
+  
+  .Description-Wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Description,
+  .Type {
+    font-size: 1rem;
+  }
+  
+  .Value {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .buttonTrash {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  

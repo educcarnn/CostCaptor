@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  gap: 8%;
+  width: 100%;
+
+    
+  }
+  
+  .title, .subtitle, .tagline{
+    font-size: 2.5vh;
+
+  }
+  

@@ -1,0 +1,32 @@
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .chart-legend li {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  
+  .chart-legend li:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+  
+
+  .chart-legend .entrada:before {
+    background-color: #FD377E;
+  }
+  
+ 
+  .chart-legend .saida:before {
+    background-color: #36A2EB;
+  }

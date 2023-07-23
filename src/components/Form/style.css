@@ -62,7 +62,8 @@
   width: 70%;
   height: 3rem;
   padding: 1rem;
-  border: none;
+  border: 1px solid #ccc;
+
   background-color: #eff1ff;
   border-radius: 0.5rem;
 }

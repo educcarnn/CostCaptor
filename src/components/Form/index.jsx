@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./style.css";
 
 export default function FormValues({ listTransactions, setListTransactions }) {
-
   const [description, setDescription] = useState("");
   const [type, setType] = useState("");
   const [value, setValue] = useState("");
@@ -48,10 +47,11 @@ export default function FormValues({ listTransactions, setListTransactions }) {
           <div className="formSelect">
             <span>Tipo de valor</span>
             <select
+              value={type}
               onChange={(event) => setType(event.target.value)}
               className="Select-Type"
             >
-              <option value="" selected disabled hidden>
+              <option value="" disabled hidden>
                 Escolha o valor
               </option>
               <option value="Entrada">Entrada</option>
@@ -59,13 +59,12 @@ export default function FormValues({ listTransactions, setListTransactions }) {
             </select>
           </div>
           <div>
-              <button type="submit" className="button" onClick={Dates}>
-                Inserir valor
-              </button>
-            </div>
+            <button type="submit" className="button" onClick={Dates}>
+              Inserir valor
+            </button>
+          </div>
         </div>
       </form>
     </>
   );
 }
-

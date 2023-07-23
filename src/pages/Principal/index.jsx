@@ -4,13 +4,14 @@ import NoItems from "../../components/NoItems";
 import HeaderCard from "../../components/Header";
 import FormValues from "../../components/Form";
 import "./style.css";
+import PieChart from "../../components/PieChart";
 import { useEffect, useState } from "react";
-
 
 export default function Principal({ setHome }) {
   const [listTransactions, setListTransactions] = useState([]);
   const [filterTransactions, setfilterTransactions] = useState([]);
   const [sumTotal, setSumTotal] = useState([]);
+  const [pieChartData, setPieChartData] = useState({});
 
   function calculateSumTotal(listTransactions) {
     return listTransactions
@@ -24,8 +25,22 @@ export default function Principal({ setHome }) {
       }, 0);
   }
 
+  const updatePieChartData = (transactions) => {
+    const data = transactions.reduce((acc, transaction) => {
+      if (acc[transaction.type]) {
+        acc[transaction.type] += Number(transaction.value);
+      } else {
+        acc[transaction.type] = Number(transaction.value);
+      }
+      return acc;
+    }, {});
+
+    setPieChartData(data);
+  };
+
   useEffect(() => {
     setSumTotal(calculateSumTotal(listTransactions));
+    updatePieChartData(listTransactions);
   }, [listTransactions, filterTransactions]);
 
   function remove(index) {
@@ -70,10 +85,15 @@ export default function Principal({ setHome }) {
             setListTransactions={setListTransactions}
           ></FormValues>
           {listTransactions.length > 0 ? (
-            <TotalMoney
-              listTransactions={listTransactions}
-              SumTotal={SumTotal}
-            ></TotalMoney>
+            <>
+              <TotalMoney
+                listTransactions={listTransactions}
+                SumTotal={sumTotal}
+              ></TotalMoney>
+              <div className="pie-chart-container">
+                <PieChart data={pieChartData}></PieChart>
+              </div>
+            </>
           ) : (
             <div>
               <NoItems />
