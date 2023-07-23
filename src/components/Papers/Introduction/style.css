@@ -5,55 +5,45 @@
   justify-content: flex-start;
   color: white;
   background: #2626af;
-  gap: 8%;
+  gap: 2rem;
   width: 100%;
-  height: 100dvh;
+  min-height: 100vh;
+  padding: 2rem;
 }
 
 .content-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5%;
+  gap: 2rem;
   width: 75%;
 }
 
 .content-second {
   display: flex;
-    flex-direction: row;
-    font-style: italic;
-    align-items: center;
-    gap: 8%;
+  flex-direction: row;
+  font-style: italic;
+  align-items: center;
+  gap: 2rem;
 }
-.block-one{
+
+.block-one {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 @media (max-width: 800px) {
-
-  .content-second{
+  .content-second {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .content-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5%;
-    width: 75%;
+    width: 90%;
   }
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    color: white;
-    height: auto;
-    background: #2626af;
-    gap: 15%;
+    gap: 4rem;
   }
 }
 
@@ -70,16 +60,15 @@
   text-align: center;
   font-size: large;
   font-weight: bold;
-  font-size: 4vh;
 }
 
 .second-text {
-  font-size: 1.8vh;
+  font-size: small;
 }
 
 @media (max-width: 800px) {
   .Button-Page {
-    margin-left: -8rem;
-    margin-top: 5rem;
+    margin-left: 0;
+    margin-top: 3rem;
   }
 }

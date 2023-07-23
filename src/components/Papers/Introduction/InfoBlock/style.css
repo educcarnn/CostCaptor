@@ -14,15 +14,15 @@
   color: #717171;
   overflow: hidden;
 }
-@media(max-width:800px){
-    .container-block {
-        width: 80%;
-    }
+
+@media (max-width: 800px) {
+  .container-block {
+    width: 80%;
+  }
 }
 
-.paragraph
-{
-    color: #ffaf35;
+.paragraph {
+  color: #ffaf35;
 }
 
 .container-block:hover {
