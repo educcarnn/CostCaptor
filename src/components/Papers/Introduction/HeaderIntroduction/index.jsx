@@ -21,9 +21,8 @@ export default function HeaderIntroduction() {
           </div>
           {isMenuOpen && (
             <div className="menu-mobile">
-              <h2 className="menu-item">Depoimentos</h2>
+              <h2 className="menu-item">Dicas</h2>
               <h2 className="menu-item">Perfil</h2>
-
               <h2 className="menu-item">Benefícios</h2>
               <h2 className="menu-item">Avaliações</h2>
             </div>
@@ -31,7 +30,7 @@ export default function HeaderIntroduction() {
         </>
       ) : (
         <>
-          <h2 className="subtitle">Depoimentos</h2>
+          <h2 className="subtitle">Dicas</h2>
           <h2 className="tagline">Perfil</h2>
           <h1 className="name">Cost Captor</h1>
           <h2 className="subtitle">Benefícios</h2>
