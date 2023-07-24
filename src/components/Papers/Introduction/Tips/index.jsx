@@ -3,8 +3,8 @@ import "./style.css";
 export default function FinancialTips() {
   return (
     <div>
-      <h2 className="tipsTitle">Dicas</h2>
       <div className="containerTips">
+        <h2 className="tipsTitle">Dicas</h2>
         <div className="tip">
           <h3>Faça um orçamento:</h3>
           <p>

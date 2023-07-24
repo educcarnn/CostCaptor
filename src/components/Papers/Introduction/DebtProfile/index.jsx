@@ -1,6 +1,8 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./style.css";
+import pessoaindividada from "../../../../assets/pessoa-individada.jpg";
 
 const DebtProfile = () => {
   const { ref, inView } = useInView({
@@ -11,7 +13,7 @@ const DebtProfile = () => {
   const listVariants = {
     visible: {
       opacity: 1,
-      y: 0,
+      x: 0, 
       transition: {
         type: "spring",
         damping: 15,
@@ -22,11 +24,11 @@ const DebtProfile = () => {
     },
     hidden: {
       opacity: 0,
-      y: 50,
+      x: -50, 
     },
   };
 
-  return(
+  return (
     <motion.div
       ref={ref}
       className={`containerDebt ${inView ? "visible" : ""}`}
@@ -53,13 +55,19 @@ const DebtProfile = () => {
           pessoas no Brasil. A falta de renda e a instabilidade financeira
           tornam mais difícil o pagamento das dívidas.
         </motion.li>
-        <motion.li variants={listVariants}> 
+        <motion.li variants={listVariants}>
           Dificuldade em lidar com imprevistos: Muitas pessoas enfrentam
           dificuldades para lidar com imprevistos financeiros, como gastos
           médicos ou reparos em casa, e acabam recorrendo ao crédito para
           resolver essas situações.
         </motion.li>
       </ul>
+      <motion.img
+        src={pessoaindividada}
+        alt="Pessoa Endividada"
+        className="endividada-img"
+        whileHover={{ scale: 1.1 }} // Efeito de zoom na imagem ao passar o mouse
+      />
     </motion.div>
   );
 };
