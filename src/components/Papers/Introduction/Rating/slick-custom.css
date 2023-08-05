@@ -1,0 +1,24 @@
+
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: initial;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+  position: relative;
+}
+
+.slick-dots li button{
+    position: relative;
+}
+

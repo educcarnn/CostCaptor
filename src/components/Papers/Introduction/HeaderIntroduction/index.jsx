@@ -13,7 +13,14 @@ export default function HeaderIntroduction() {
 
   return (
     <header className="header">
-      {isMobile ? (
+      <h1 className="name">Cost Captor</h1>
+    </header>
+  );
+}
+
+{
+  /*
+  {isMobile ? (
         <>
           <div className="menu-toggle" onClick={toggleMenu}>
             <h2 className="name">Cost Captor</h2>
@@ -23,20 +30,9 @@ export default function HeaderIntroduction() {
             <div className="menu-mobile">
               <h2 className="menu-item">Dicas</h2>
               <h2 className="menu-item">Perfil</h2>
-              <h2 className="menu-item">Benefícios</h2>
               <h2 className="menu-item">Avaliações</h2>
             </div>
           )}
         </>
-      ) : (
-        <>
-          <h2 className="subtitle">Dicas</h2>
-          <h2 className="tagline">Perfil</h2>
-          <h1 className="name">Cost Captor</h1>
-          <h2 className="subtitle">Benefícios</h2>
-          <h2 className="tagline">Avaliações</h2>
-        </>
-      )}
-    </header>
-  );
+  */
 }

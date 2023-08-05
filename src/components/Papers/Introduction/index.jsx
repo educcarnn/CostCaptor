@@ -5,6 +5,7 @@ import mulhercelular from "../../../assets/mulhercelular.png";
 import InfoBlock from "./InfoBlock";
 import Tips from "./Tips";
 import DebtProfile from "./DebtProfile";
+import Rating from "./Rating";
 
 export default function Introduction() {
   let history = useHistory();
@@ -43,6 +44,7 @@ export default function Introduction() {
         <InfoBlock />
       </div>
       <Tips />
+      {/*<Rating/>*/}
       <DebtProfile />
     </div>
   );
